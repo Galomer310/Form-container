@@ -1,9 +1,26 @@
-# React + Vite
+# React Form Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React project showcasing a dynamic form with various input types, including text, number, radio, checkbox, and dropdown fields. The form allows users to input personal details and select dietary restrictions, updating the application state in real-time.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# Form-container
+- **Dynamic Form Handling**:
+  - Inputs for first name, last name, age, gender, and country selection.
+  - Checkbox options for dietary restrictions (Vegan, Nuts-Free, Lactose-Free).
+- **State Management**:
+  - State is managed using React's `useState` hook.
+  - Updates are applied dynamically as users interact with the form.
+- **Custom URL Handling**:
+  - Form data is encoded into query parameters and reflected in the URL without page reload.
+- **Display Component**:
+  - Form data is displayed in real-time in a separate component.
+
+## Project Structure
+
+```plaintext
+src/
+├── components/
+│   ├── FormComponent.js  # Handles the form and user input
+│   ├── DisplayData.js    # Displays submitted form data
+├── App.js                # Main application logic
+└── index.js              # Entry point of the application
